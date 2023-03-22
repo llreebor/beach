@@ -1,0 +1,638 @@
+// Vars
+$breakpoint1450: 1449.99px;
+$breakpoint1200: 1199.99px;
+$breakpoint992: 991.99px;
+$breakpoint768: 767.99px;
+$breakpoint480: 479.99px;
+$breakpoint375: 374.99px;
+
+// ========================  [ Section beaches Hero ] ==========================
+.beaches__hero {
+    padding: 400px 0;
+    background: url('../img/beaches/hero.jpg') center / cover no-repeat;
+    @media (max-width: $breakpoint1450) {
+        padding: 250px 0;
+    }
+    @media (max-width: $breakpoint992) {
+        padding: 200px 0;
+    }
+    @media (max-width: $breakpoint480) {
+        padding: 85px 0;
+    }
+}
+.beaches__hero-2 {
+    padding: 340px 0;
+    background: url('../img/beaches/hero-2.jpeg') center / cover no-repeat;
+}
+
+// ==========================  [ Section beaches ] ============================
+.section {
+    // .section__beaches
+    &__beaches {
+        padding-bottom: 110px;
+        @media (max-width: $breakpoint768) {
+            padding-bottom: 60px;
+        }
+        @media (max-width: $breakpoint480) {
+            padding-bottom: 30px;
+        }
+    }
+}
+.container__beaches {
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    @media (max-width: $breakpoint992) {
+        padding: 0;
+    }
+}
+// beaches__head
+.beaches {
+    // .beaches__head
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -50px;
+        @media (max-width: $breakpoint992) {
+            margin-top: 0;
+        }
+    }
+    // .beaches__list
+    &__list {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+        @media (max-width: $breakpoint992) {
+            display: none;
+        }
+    }
+    // .beaches__list-item
+    &__list-item {
+        position: relative;
+        font-size: 12px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: left;
+        color: #4e4e4e;
+        text-decoration: underline;
+
+        &:not(:first-child) {
+            padding-left: 10px;
+            &:after {
+                position: absolute;
+                content: '';
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+                width: 3px;
+                height: 3px;
+                border-radius: 100%;
+                background: #4e4e4e;
+            }
+        }
+    }
+    // .beaches__info
+    &__info {
+        background: #b7ede8;
+        padding: 19px 120px;
+        margin-top: -20px;
+        @media (max-width: $breakpoint1200) {
+            padding: 19px 80px;
+        }
+        @media (max-width: $breakpoint992) {
+            margin-top: 0;
+            width: 100%;
+            padding: 18px;
+        }
+        &-list {
+            display: flex;
+            gap: 10px;
+            margin: 0 auto;
+            margin-top: 10px;
+            justify-content: center;
+            li {
+                position: relative;
+                padding-left: 10px;
+                font-size: 15px;
+                font-style: normal;
+                color: #4e4e4e;
+                @media (max-width: $breakpoint992) {
+                    font-size: 11px;
+                }
+                span {
+                    font-weight: 700;
+                }
+                &:not(:first-child) {
+                    &:after {
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        top: 50%;
+                        transform: translate(0, -50%);
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 100%;
+                        background: #4e4e4e;
+                    }
+                }
+            }
+        }
+    }
+    // .beaches__info-title
+    &__info-title {
+        font-size: 29px;
+        font-weight: 500;
+        font-style: normal;
+        text-align: center;
+        color: #4e4e4e;
+        letter-spacing: 6px;
+        @media (max-width: $breakpoint1200) {
+            font-size: 22px;
+        }
+        @media (max-width: $breakpoint992) {
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+    // .beaches__info-text
+    &__info-text {
+        font-size: 15px;
+        font-weight: 300;
+        font-style: normal;
+        text-align: center;
+        color: #4e4e4e;
+        border-bottom: 1px solid #5fc1c0;
+        max-width: fit-content;
+        margin: 0 auto;
+        padding: 9px 0;
+        @media (max-width: $breakpoint1200) {
+            font-size: 14px;
+        }
+        @media (max-width: $breakpoint992) {
+            font-size: 12px;
+        }
+    }
+}
+// beaches__body
+.beaches {
+    // .beaches__body
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .beaches__body-info
+    &__body-info {
+    }
+    // .beaches__title
+    &__title {
+        text-align: left;
+        margin-top: 49px;
+        @media (max-width: $breakpoint1450) {
+            text-align: center;
+        }
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+        }
+    }
+    // .beaches__text
+    &__text {
+        text-align: left;
+        max-width: 900px;
+        margin: 0;
+        @media (max-width: $breakpoint1450) {
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+    // .beaches__stats
+    &__stats {
+        display: flex;
+        gap: 25px;
+        margin-top: 118px;
+        @media (max-width: $breakpoint1450) {
+            justify-content: center;
+            margin-top: 20px;
+        }
+        @media (max-width: $breakpoint768) {
+            flex-wrap: wrap;
+        }
+    }
+    // .beaches__stats-item
+    &__stats-item {
+        padding: 25px 30px;
+        background: url('../img/beaches/box.png') center / cover no-repeat;
+        max-width: 268px;
+        height: auto;
+        @media (max-width: $breakpoint768) {
+            flex: 0 1 45%;
+            padding: 15px 20px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            font-style: normal;
+            text-align: center;
+            color: #ffffff;
+            padding: 0 15px 15px 15px;
+            border-bottom: 1px solid white;
+            @media (max-width: $breakpoint768) {
+                font-size: 12px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 9px;
+            }
+        }
+
+        strong {
+            font-size: 33px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: center;
+            color: #ffffff;
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            margin-top: 8px;
+            @media (max-width: $breakpoint768) {
+                font-size: 26px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 20px;
+            }
+        }
+    }
+    // .beaches__body-img
+    &__body-img {
+        @media (max-width: $breakpoint1450) {
+            display: none;
+        }
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        &.beaches__body-img-mob {
+            display: none;
+            @media (max-width: $breakpoint1450) {
+                display: flex;
+                justify-content: center;
+                margin-top: 20px;
+                img {
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}
+
+// =============================  [ Section Went ] =============================
+.section {
+    // .section__went
+    &__went {
+        padding: 100px 20px 160px 20px;
+        @media (max-width: $breakpoint992) {
+            padding: 80px 20px;
+        }
+        @media (max-width: $breakpoint768) {
+            padding: 30px 20px;
+        }
+    }
+    // .section__title-beaches
+    &__title-beaches {
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        @media (max-width: $breakpoint992) {
+            margin-bottom: 20px;
+            padding: 0;
+        }
+    }
+    // .section__text-beaches
+    &__text-beaches {
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-top: 20px;
+        text-align: left;
+        @media (max-width: $breakpoint992) {
+            padding: 0;
+        }
+    }
+}
+
+// ============================  [ Section Quote ] =============================
+.section {
+    // .section__quote
+    &__quote {
+        background: url('../img/beaches/quote__bg.jpg') center / cover no-repeat;
+        padding: 230px 0;
+        @media (max-width: $breakpoint992) {
+            padding: 200px 0;
+        }
+        @media (max-width: $breakpoint768) {
+            padding: 60px 0;
+        }
+    }
+}
+.container {
+    // .container__quote
+    &__quote {
+        max-width: 1740px;
+        padding: 0 20px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+.quote {
+    // .quote__text
+    &__text {
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        @media (max-width: $breakpoint768) {
+            font-size: 11px;
+        }
+    }
+    // .quote__author
+    &__author {
+        font-size: 25px;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 30px;
+        @media (max-width: $breakpoint768) {
+            font-size: 11px;
+            margin-top: 18px;
+        }
+    }
+}
+
+// =========================  [ Section Beaches Info ] =========================
+.info.beaches__info {
+    max-width: 1580px !important;
+    gap: 100px !important;
+    @media (max-width: $breakpoint1200) {
+        max-width: 100% !important;
+        gap: 40px !important;
+    }
+}
+.beaches {
+    // .beaches__info
+    &__info-main {
+        background: transparent;
+    }
+}
+.info {
+    // .info__subtitle
+    &__subtitle {
+        font-size: 25px;
+        font-weight: 300;
+        font-style: normal;
+        color: #4e4e4e;
+
+        &.info__subtitle-pc {
+            @media (max-width: $breakpoint992) {
+                display: none;
+            }
+        }
+        &.info__subtitle-mob {
+            display: none;
+            @media (max-width: $breakpoint992) {
+                display: block;
+                text-align: center;
+                font-size: 16px;
+                margin-bottom: -25px;
+            }
+        }
+    }
+}
+
+// ===========================  [ Section Judges ] ==============================
+.judges {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 24px;
+    max-width: 1544px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 0 20px;
+    @media (max-width: $breakpoint1200) {
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+    }
+    @media (max-width: $breakpoint768) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 25px;
+        gap: 15px;
+    }
+    // .judges__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+
+        &::after {
+            transition: 0.3s opacity;
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            right: 20px;
+            bottom: 40px;
+            border: 1px solid white;
+            content: '';
+            opacity: 0;
+            z-index: 0;
+        }
+
+        &:hover:after {
+            opacity: 1;
+        }
+    }
+    // .judges__info
+    &__info {
+        margin-left: 32px;
+        margin-right: 32px;
+        display: flex;
+        flex-direction: column;
+        background: #b2efeb;
+        font-size: 13.2px;
+        line-height: 1.2;
+        text-align: center;
+        letter-spacing: 0.2em;
+        color: #4e4e4e;
+        padding: 13px 0;
+        margin-top: -40px;
+        z-index: 2;
+        @media (max-width: $breakpoint768) {
+            font-size: 14px;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: -20px;
+        }
+        @media (max-width: $breakpoint480) {
+            font-size: 10px;
+        }
+    }
+}
+
+// Table
+.judges {
+    // .judges__table
+    &__table {
+        max-width: 1544px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+        text-align: left;
+        margin-top: 40px;
+        border-collapse: collapse;
+        @media (max-width: $breakpoint768) {
+            margin-top: 20px;
+        }
+        .header__row {
+            background: #ebf1f0;
+            font-size: 15px;
+            font-weight: 500;
+            font-style: normal;
+
+            color: #4e4e4e;
+            text-transform: uppercase;
+            @media (max-width: $breakpoint768) {
+                padding: 10px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 9px;
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: #ebf1f0;
+                }
+            }
+        }
+
+        th {
+            font-weight: 500;
+            padding: 18px 20px;
+            @media (max-width: $breakpoint768) {
+                padding: 10px;
+            }
+        }
+        td,
+        tr {
+            padding: 18px 20px;
+            font-size: 15px;
+            font-weight: 400;
+            font-style: normal;
+            color: #4e4e4e;
+            @media (max-width: $breakpoint768) {
+                padding: 10px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 9px;
+            }
+        }
+    }
+}
+
+// ===========================  [ Section Climate ] ==============================
+.section {
+    // .section__climate
+    &__climate {
+    }
+    // .section__title
+    &__title {
+    }
+}
+.climate {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1740px;
+    padding: 0 20px;
+    gap: 60px;
+    margin: 0 auto;
+    align-items: center;
+    @media (max-width: $breakpoint1450) {
+        gap: 30px;
+    }
+    @media (max-width: $breakpoint1200) {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+        margin-top: -50px;
+    }
+    // .climate__item
+    &__item {
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: auto;
+        }
+
+        .section__title {
+            margin-bottom: 20px;
+        }
+    }
+    // .climate__table
+    &__table {
+        border-collapse: collapse;
+        margin-top: 0;
+        @media (max-width: $breakpoint1200) {
+            width: 100%;
+        }
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background: #ebf1f0;
+                }
+            }
+        }
+        .header__row {
+            background: #ebf1f0;
+
+            font-size: 15px;
+            font-weight: 500 !important;
+            font-style: normal;
+            color: #4e4e4e;
+            text-transform: uppercase;
+            @media (max-width: $breakpoint768) {
+                padding: 10px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 9px;
+                padding: 5px;
+            }
+        }
+        th {
+            padding: 10px 20px;
+            @media (max-width: $breakpoint480) {
+                padding: 5px;
+            }
+        }
+        td,
+        tr {
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 400;
+            font-style: normal;
+            color: #4e4e4e;
+            @media (max-width: $breakpoint768) {
+                padding: 10px;
+            }
+            @media (max-width: $breakpoint480) {
+                font-size: 9px;
+                padding: 5px;
+            }
+        }
+    }
+}
