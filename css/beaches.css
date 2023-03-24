@@ -12,15 +12,20 @@
     padding: 200px 0;
   }
 }
-@media (max-width: 479.99px) {
-  .beaches__hero {
-    padding: 85px 0;
-  }
-}
 
 .beaches__hero-2 {
   padding: 340px 0;
   background: url("../img/beaches/hero-2.jpeg") center/cover no-repeat;
+}
+@media (max-width: 1449.99px) {
+  .beaches__hero-2 {
+    padding: 250px 0;
+  }
+}
+@media (max-width: 991.99px) {
+  .beaches__hero-2 {
+    padding: 200px 0;
+  }
 }
 
 .section__beaches {
@@ -335,7 +340,7 @@
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 991.99px) {
   .section__text-beaches {
@@ -366,7 +371,7 @@
 }
 
 .quote__text {
-  font-size: 25px;
+  font-size: 33px;
   font-weight: 400;
   font-style: normal;
   text-align: center;
